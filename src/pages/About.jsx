@@ -134,7 +134,7 @@ export default function About() {
                                     <h2 className="text-3xl font-bold mb-4">What Is Algorithmic Exploitation?</h2>
                                 </div>
 
-                                <div className="alert alert-info mb-10 py-4">
+                                <div className="alert alert-info mb-4 py-4">
                                     <div>
                                         <h3 className="font-bold text-xl mb-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="inline h-6 w-6 shrink-0 stroke-current align-text-top translate-y-0.5" fill="none" viewBox="0 0 24 24">
@@ -146,6 +146,19 @@ export default function About() {
                                             <strong>Algorithmic exploitation</strong> refers to how social media platforms use algorithms to identify user vulnerabilities and encourage compulsive behavior in order to maximize engagement, data collection, and profit.
                                         </p>
                                     </div>
+                                </div>
+
+                                <div className="prose prose-base max-w-none mb-8">
+                                    <p>
+                                        Algorithms optimize for engagement because this allows recommendation systems to <strong>collect more data and be more accurate</strong>. This allows for better targeted ads, allowing the company to make more money.
+                                        Short-form content is a reduction in agency which further helps keep engagement high, making content consumption similar to gambling.
+                                    </p>
+                                    <p>
+                                        The language used to describe algorithmic systems (recommended, personalized, for you) frames platform control as user choice.
+                                        This empowers corporations by <strong>masking surveillance and manipulation</strong>, while limiting the agency of teenagers who lack the developmental capacity
+                                        to critically interpret or resist these systems. As a result, <strong>responsibility is subtly shifted</strong> away from platforms and onto individual users, reinforcing
+                                        the false narrative that excessive use is a personal failure rather than a structural issue.
+                                    </p>
                                 </div>
 
                                 <div className="grid gap-8 lg:grid-cols-2 mb-10">
@@ -182,6 +195,14 @@ export default function About() {
                                     desc="This flowchart details the process in which recommendation algorithms sustain engagement."
                                 />
 
+                                <div className="prose prose-base max-w-none mb-10">
+                                    <p>
+                                        While platform developers often justify algorithmic design decisions as neutral, the real-world impact on teenagers reveals a significant
+                                        <strong> disconnect between intent and impact</strong>. Even if engagement optimization is not explicitly intended to cause harm, its disproportionate effects on adolescent
+                                        mental health demonstrate how systems of power can perpetuate damage all for the means of profit, which also <strong>entails keeping power and ensuring students don't fight back</strong>.
+                                    </p>
+                                </div>
+
                                 {/* Harmful Design Features */}
                                 <div className="card bg-base-100 border border-base-300">
                                     <div className="card-body">
@@ -196,7 +217,7 @@ export default function About() {
                                             <div className="bg-base-200 border border-base-300 rounded-xl p-5 text-center hover:bg-base-300 transition-all hover:shadow-md">
                                                 <div className="text-4xl mb-3">∞</div>
                                                 <h4 className="font-semibold mb-2">Infinite Consumption</h4>
-                                                <p className="text-sm text-base-content/70">Infinite scrolling, autoplay</p>
+                                                <p className="text-sm text-base-content/70">No time limit warnings, autoplay</p>
                                             </div>
 
                                             <div className="bg-base-200 border border-base-300 rounded-xl p-5 text-center hover:bg-base-300 transition-all hover:shadow-md">
@@ -317,56 +338,17 @@ export default function About() {
                                 </div>
                             </div>
 
-                            {/* Section 3: Corporate Responsibility */}
-                            <div id="section-3" className="mb-20 scroll-mt-20">
-                                <div className="prose prose-lg max-w-none mb-8">
-                                    <h2 className="text-3xl font-bold mb-4">Who Is Responsible? Let's Dig Deeper</h2>
-                                </div>
-
-                                <div className="card bg-base-100 border border-base-300 mb-10">
-                                    <div className="card-body">
-                                        <h3 className="card-title text-lg mb-2">Surveillance Capitalism</h3>
-                                        <div className="grid gap-6 md:grid-cols-3">
-                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
-                                                <div className="card-body p-6 text-center">
-                                                    <div className="text-4xl font-bold text-primary mb-2">200+</div>
-                                                    <div className="text-sm text-base-content/70">Data points collected per user daily</div>
-                                                </div>
-                                            </div>
-
-                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
-                                                <div className="card-body p-6 text-center">
-                                                    <div className="text-4xl font-bold text-secondary mb-2">3.1% → 44%</div>
-                                                    <div className="text-sm text-base-content/70">Digital ad spend growth (2001-2020)</div>
-                                                </div>
-                                            </div>
-
-                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
-                                                <div className="card-body p-6 text-center">
-                                                    <div className="text-4xl font-bold text-accent mb-2">5</div>
-                                                    <div className="text-sm text-base-content/70">Corporations control majority of global digital ad revenue</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="card bg-base-100 border border-base-300 bg-gradient-to-br from-primary/20 to-secondary/20">
-                                    <div className="card-body">
-                                        <h3 className="card-title text-lg mb-4">Why Responsibility Is Systemic</h3>
-                                        <div className="prose prose-base max-w-none">
-                                            <p>
-                                                Accountability is blurred between users, parents, and companies. Teens are identified as especially vulnerable but remain structurally unprotected in a system designed to extract maximum value from their attention and data.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             {/* Section 4: Future Impact */}
                             <div id="section-4" className="mb-20 scroll-mt-20">
                                 <div className="prose prose-lg max-w-none mb-8">
                                     <h2 className="text-3xl font-bold mb-4">Impact on the Future Generation of Teenagers</h2>
+                                </div>
+
+                                <div className="prose prose-base max-w-none mb-10">
+                                    <p>
+                                        As algorithmic addiction becomes normalized, future generations may come to view constant surveillance and compulsive engagement as inevitable aspects of life.
+                                        This normalization risks eroding expectations of autonomy, safe digital consumption, and meaningful social connection, <strong>reshaping cultural norms in ways that do not prioritize social justice</strong>.
+                                    </p>
                                 </div>
 
                                 <div className="grid gap-8 lg:grid-cols-2 mb-10">
@@ -441,6 +423,67 @@ export default function About() {
                                 </div>
                             </div>
 
+                            {/* Section 3: Corporate Responsibility */}
+                            <div id="section-3" className="mb-20 scroll-mt-20">
+                                <div className="prose prose-lg max-w-none mb-8">
+                                    <h2 className="text-3xl font-bold mb-4">Who Is Responsible? Let's Dig Deeper</h2>
+                                </div>
+
+                                <div className="card bg-base-100 border border-base-300 mb-6">
+                                    <div className="card-body">
+                                        <h3 className="card-title text-lg mb-2">Surveillance Capitalism</h3>
+                                        <div className="prose prose-base max-w-none mb-4">
+                                            <p>
+                                                The digital revolution provides convenience but introduces new social risks.
+                                                Digital interactions generate hundreds of data points per user per day.
+                                                These data points are copied, aggregated, and processed algorithmically, primarily for advertising and behavioural prediction.
+                                            </p>
+                                        </div>
+                                        <div className="grid gap-6 md:grid-cols-3">
+                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
+                                                <div className="card-body p-6 text-center">
+                                                    <div className="text-4xl font-bold text-primary mb-2">2.5 × 10<sup>18</sup></div>
+                                                    <div className="text-sm text-base-content/70">Bytes of data are generated globally every day</div>
+                                                </div>
+                                            </div>
+
+                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
+                                                <div className="card-body p-6 text-center">
+                                                    <div className="text-4xl font-bold text-secondary mb-2">3.1% → 44%</div>
+                                                    <div className="text-sm text-base-content/70">Digital ad spend growth (2001-2020)</div>
+                                                </div>
+                                            </div>
+
+                                            <div className="card bg-base-200 border border-base-300 hover:shadow-md transition-shadow">
+                                                <div className="card-body p-6 text-center">
+                                                    <div className="text-4xl font-bold text-accent mb-2">5</div>
+                                                    <div className="text-sm text-base-content/70">Corporations control majority of global digital ad revenue</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="prose prose-base max-w-none mb-6">
+                                    <p>
+                                        Corporations that design and deploy engagement-driven algorithms possess <strong>disproportionate power</strong> and privilege compared to teenage users. This imbalance
+                                        allows platforms to shape behavior, attention, and identity formation without meaningful consent or accountability. Framing responsibility as individual
+                                        choice ignores the structural advantage held by corporations, and causes people to lose power by failing to see the root issue.
+                                    </p>
+                                </div>
+
+                                <div className="card bg-base-100 border border-base-300 bg-gradient-to-br from-primary/20 to-secondary/20">
+                                    <div className="card-body">
+                                        <h3 className="card-title text-lg mb-2">Why Responsibility Is Systemic</h3>
+                                        <div className="prose prose-base max-w-none">
+                                            <p>
+                                                Accountability is blurred between users, parents, and companies. Teens are identified as especially vulnerable but remain structurally unprotected in a system designed to extract maximum value from their attention and data.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             {/* Section 5: Solutions */}
                             <div id="section-5" className="mb-15 scroll-mt-20">
                                 <div className="prose prose-lg max-w-none mb-8">
@@ -501,7 +544,7 @@ export default function About() {
                                         <div className="grid md:grid-cols-2 gap-6">
                                             <div className="card bg-error/10 border-error/30 hover:shadow-md transition-shadow">
                                                 <div className="card-body">
-                                                    <div className="flex items-center justify-between mb-4">
+                                                    <div className="flex items-center justify-between">
                                                         <h4 className="text-lg font-bold text-error">Centralized Social Media</h4>
                                                         <span className="badge badge-error badge-lg">Current</span>
                                                     </div>
@@ -519,7 +562,7 @@ export default function About() {
 
                                             <div className="card bg-success/10 border-success/30 hover:shadow-md transition-shadow">
                                                 <div className="card-body">
-                                                    <div className="flex items-center justify-between mb-4">
+                                                    <div className="flex items-center justify-between">
                                                         <h4 className="text-lg font-bold text-success">Mastodon (Decentralized)</h4>
                                                         <span className="badge badge-success badge-lg">Alternative</span>
                                                     </div>
@@ -535,6 +578,15 @@ export default function About() {
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div className="prose prose-base max-w-none mt-4">
+                                            <h4>Issues with Mastodon</h4>
+                                            <ul>
+                                                <li>Can create echo chambers as users select communities that align with their own ideologies.</li>
+                                                <li>Less automated moderation: relies heavily on community reporting.</li>
+                                                <li>Not a full replacement for mainstream platforms, mostly a proof of concept currently.</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -543,12 +595,21 @@ export default function About() {
                             <div className="pb-20">
                                 <div className="card bg-gradient-to-br from-primary/20 to-base-200 border border-primary/30">
                                     <div className="card-body p-8">
-                                        <h2 className="card-title text-3xl mb-8 text-center">Key Findings & Conclusion</h2>
+                                        <h2 className="card-title text-3xl mb-4 text-center">Conclusion</h2>
+
+                                        <div className="prose prose-base max-w-none mb-4">
+                                            <p>
+                                                The current state of teenage online addiction is driven by algorithms that chase engagement, all for the goal of profit for huge corporations.
+                                                I’ve always thought online media addiction is not a personal failure, but a systemic issue, given the number of teenagers with high online usage rates.
+                                                The research to find the root cause provides confirmation, as the designs of popular platforms are predatory, education and policies need updating, and more awareness needs to be brought to the issue.
+                                                Algorithms have their benefits, but we need to ensure that algorithmic systems are not actively manipulating engagement and emotion.
+                                            </p>
+                                        </div>
 
                                         <div className="space-y-8">
                                             <div className="card bg-base-100 border border-base-300">
                                                 <div className="card-body">
-                                                    <h3 className="card-title text-lg">Core Findings</h3>
+                                                    <h3 className="card-title text-lg">Key Insights</h3>
                                                     <div className="prose prose-base max-w-none">
                                                         <ol className="space-y-2">
                                                             <li className="font-medium">Teenagers are neurologically vulnerable to algorithm-driven addiction</li>
@@ -559,6 +620,14 @@ export default function About() {
                                                         </ol>
                                                     </div>
                                                 </div>
+                                            </div>
+
+                                            <div className="prose prose-base max-w-none mb-10">
+                                                <p>
+                                                    As a teenager who grew up accustomed to technology, my perspective is shaped by firsthand exposure to constant connectivity, algorithmic feeds, and normalized high screen use.
+                                                    Recently, through high school, I’ve noticed short-form content being the most addictive, and something that had a negative impact on my life, which is why I’ve slowly reduced my use throughout the years.
+                                                    I fear that social normalization will make it harder for people to recognize harm or seek help, reinforcing the need for systemic change rather than blaming individuals.
+                                                </p>
                                             </div>
 
                                             <div className="card bg-primary/10 border-primary/40">
