@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import barUsageImg from "../../public/bar-usage.png"
-import flowchartImg from "../../public/flowchart-rec.png"
+import barUsageImg from "/bar-usage.png"
+import flowchartImg from "/flowchart-rec.png"
 
 export default function About() {
     const [readingTime] = useState('20 min read');
