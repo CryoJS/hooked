@@ -644,6 +644,30 @@ export default function About() {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="collapse collapse-arrow bg-base-100 border-base-300 border">
+                                <input type="checkbox" />
+                                <div className="collapse-title font-semibold">References</div>
+                                <div className="prose max-w-none collapse-content text-sm hanging-indent">
+                                    <p className="text-base text-base-content">Full research and specific source used for each point:{" "}
+                                        <a href="../../../public/full-research.pdf" download className="text-blue-600 hover:text-blue-800">
+                                            Download PDF
+                                        </a>
+                                    </p>
+
+                                    <p>Arora, S., Arora, S., & Hastings, J. D. (2024, August 19). The Psychological Impacts of Algorithmic and AI-Driven Social Media on Teenagers: A Call to Action. arXiv. Retrieved January 12, 2026, from https://arxiv.org/html/2408.10351v1</p>
+                                    <p>Bolch, M. B., Moore, R. M., Robertson, G. C., Scafe, M. J., & Milkovich, L. M. (2025, August 1). Screens Are Not the Enemy: Recommendations for Developing Healthy Digital Habits in Youth. National Library of Medicine. Retrieved January 12, 2026, from https://pmc.ncbi.nlm.nih.gov/articles/PMC12331319/</p>
+                                    <p>Canadian Heritage. (2024, February 26). Backgrounder – Government of Canada introduces legislation to combat harmful content online, including the sexual exploitation of children. Canada.ca. Retrieved January 12, 2026, from https://www.canada.ca/en/canadian-heritage/news/2024/02/backgrounder--government-of-canada-introduces-legislation-to-combat-harmful-content-online-including-the-sexual-exploitation-of-children.html</p>
+                                    <p>Draper, D., & Neschke, S. (2023, October 1). The Pros and Cons of Social Media Algorithms. Bipartisan Policy Center. Retrieved January 12, 2026, from https://bipartisanpolicy.org/wp-content/uploads/2023/10/BPC_Tech-Algorithm-Tradeoffs_R01.pdf</p>
+                                    <p>Ebsworth, J., Johns, S., & Dodson, M. (2021, July 1). Surveillance Capitalism: the hidden costs of the digital revolution. Cambridge Papers. Retrieved January 12, 2026, from https://www.cambridgepapers.org/surveillance-capitalism-the-hidden-costs-of-the-digital-revolution/</p>
+                                    <p>eSafety Commissioner. (2025, April 17). An unfair fight – how algorithms are shaping our adolescents. eSafety Commissioner. Retrieved January 12, 2026, from https://www.esafety.gov.au/newsroom/blogs/an-unfair-fight-how-algorithms-are-shaping-our-adolescents</p>
+                                    <p>Jackiw, J. (2022, March 1). How To Overcome Social Media Addiction - CTRI. Crisis & Trauma Resource Institute. Retrieved January 12, 2026, from https://ctrinstitute.com/blog/how-to-overcome-social-media-addiction/</p>
+                                    <p>Klam, L. (2024, April 15). Algorithms, Addiction, and Abuse: The Need to Protect Children Online. First Focus on Children. Retrieved January 12, 2026, from https://firstfocus.org/update/algorithms-addiction-and-abuse-the-need-to-protect-children-online/</p>
+                                    <p>Moore, D. M. (2024, July 9). Algorithmic Exploitation in Social Media Human Trafficking and Strategies for Regulation. CanLII. Retrieved January 12, 2026, from https://www.canlii.org/en/commentary/doc/2024CanLIIDocs1910</p>
+                                    <p>Shakya, B., & Hernandez, C. (2024, November 8). Algorithmic Manipulation: How social media platforms exploit student vulnerabilities. Yale News. Retrieved January 12, 2026, from https://yaledailynews.com/blog/2024/11/08/algorithmic-manipulation-how-social-media-platforms-exploit-student-vulnerabilities/</p>
+                                </div>
+                            </div>
+                            <div className="py-10"></div>
                         </div>
                     </div>
                 </section>

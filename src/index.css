@@ -1,3 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
+
+.hanging-indent {
+    padding-left: 4rem;
+    text-indent: -2rem;
+}
