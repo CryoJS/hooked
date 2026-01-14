@@ -60,17 +60,60 @@ export default function Game() {
 
     const generateNewWork = () => {
         const texts = [
-            "Digital platforms optimize for engagement, not well-being.",
-            "Short-form content reduces attention spans significantly.",
-            "Dopamine hits from likes create addictive feedback loops.",
-            "Algorithmic feeds prioritize controversy over truth.",
-            "Social comparison on apps increases anxiety rates.",
-            "Notification design exploits human psychology intentionally.",
-            "Endless scrolling hijacks our decision-making abilities.",
-            "Metrics replace meaning in modern online interactions.",
-            "Variable rewards create unpredictable addiction patterns.",
-            "Auto-play features eliminate natural stopping points completely."
-        ]
+            "Digital platforms optimize for engagement, not for users' well-being.",
+            "Short-form content significantly reduces attention spans in teenagers.",
+            "Dopamine hits from likes and comments create addictive feedback loops.",
+            "Algorithmic feeds often prioritize controversy over the truth.",
+            "Social comparison on apps increases anxiety and lowers self-esteem.",
+            "Notification design intentionally exploits human psychology.",
+            "Endless scrolling hijacks users' decision-making abilities.",
+            "Metrics such as likes and shares replace meaningful interaction online.",
+            "Variable rewards create unpredictable patterns of digital addiction.",
+            "Auto-play features eliminate natural stopping points completely.",
+            "Teenagers are neurologically vulnerable to algorithm-driven addiction.",
+            "Algorithms are designed to maximize engagement over user well-being.",
+            "Social media platforms analyze user behavior to maintain attention.",
+            "Personalized feeds target psychological vulnerabilities in users.",
+            "Platforms profit from prolonged engagement at the expense of mental health.",
+            "The constant availability of notifications encourages compulsive checking.",
+            "Algorithmic recommendation systems reinforce harmful content consumption.",
+            "Users often underestimate the time spent on addictive platforms.",
+            "Digital media benefits exist but are overshadowed by associated harms.",
+            "Safeguards for teenagers have not kept pace with technological developments.",
+            "Early algorithms focused on user convenience rather than control.",
+            "AI-driven systems now manipulate emotions for engagement optimization.",
+            "Priority is given to emotionally charged content to increase screen time.",
+            "Teens are targeted during critical developmental stages.",
+            "Exposure to violent or sexual content can lead to desensitization.",
+            "Unrealistic beauty standards are reinforced through filters and AI images.",
+            "Social media platforms foster compulsive behaviors in adolescents.",
+            "Sleep disruption is linked to extended screen time.",
+            "Online addiction contributes to social isolation among teenagers.",
+            "Mental health issues like anxiety and depression correlate with social media use.",
+            "Platforms convert social interaction into performance metrics.",
+            "Algorithmic design encourages comparison and competition.",
+            "Dopamine-driven loops are intentionally built into apps.",
+            "Centralized platforms harvest data and prioritize profit over user agency.",
+            "Decentralized platforms offer better transparency and community control.",
+            "Excessive use of social media can lead to long-term cognitive effects.",
+            "Teenagers often struggle to recognize their own addictive behaviors.",
+            "Algorithmic exploitation blurs responsibility between users and companies.",
+            "Surveillance capitalism drives the collection of thousands of data points daily.",
+            "Digital ad spending growth reflects a profit-first online economy.",
+            "Unchecked algorithms spread harmful ideologies and false beliefs.",
+            "Normalized algorithmic addiction reduces agency and autonomy.",
+            "Government policies can help mitigate online harms through regulation.",
+            "Algorithm monitoring and human moderation can reduce compulsive use.",
+            "Reducing autoplay and infinite scroll restores user control.",
+            "Screen-free zones and digital detoxes improve well-being.",
+            "Community-driven platforms empower users with algorithmic transparency.",
+            "Proactive interventions are necessary to protect vulnerable teenagers.",
+            "Education on algorithmic risks enhances awareness and self-regulation.",
+            "Recognition of addiction signs is critical for early prevention.",
+            "Responsible platform design can prevent exploitation and harm.",
+            "Systemic change is required to shift technology towards user welfare."
+        ];
+
         const text = texts[Math.floor(Math.random() * texts.length)]
         setTargetText(text)
         setTypedText('')
@@ -170,37 +213,54 @@ export default function Game() {
     }
 
     const renderText = () => {
-        return targetText.split('').map((char, idx) => {
-            if (idx < currentIndex) {
-                const isCorrect = typedText[idx] === char
-                return (
-                    <span
-                        key={idx}
-                        className={`transition-colors duration-75 ${isCorrect ? 'text-success' : 'text-error'}`}
-                    >
-                        {char === ' ' ? '\u00A0' : char}
-                    </span>
-                )
-            }
+        // Split the text by spaces but keep spaces in the result
+        const words = targetText.split(' ').map((word, idx, arr) => {
+            const isLast = idx === arr.length - 1;
+            return word + (isLast ? '' : ' ');
+        });
 
-            if (idx === currentIndex) {
-                return (
-                    <span key={idx} className="relative">
-                        <span className="text-base-content/40">
+        let charCounter = 0;
+
+        return words.map((word, wordIdx) => {
+            return (
+                <span key={wordIdx} className="inline-block mr-0.5">
+                {word.split('').map((char, charIdx) => {
+                    const globalIdx = charCounter;
+                    charCounter += 1;
+
+                    if (globalIdx < currentIndex) {
+                        const isCorrect = typedText[globalIdx] === char;
+                        return (
+                            <span
+                                key={charIdx}
+                                className={`transition-colors duration-75 ${isCorrect ? 'text-success' : 'text-error'}`}
+                            >
+                                {char === ' ' ? '\u00A0' : char}
+                            </span>
+                        );
+                    }
+
+                    if (globalIdx === currentIndex) {
+                        return (
+                            <span key={charIdx} className="relative">
+                                <span className="text-base-content/40">
+                                    {char === ' ' ? '\u00A0' : char}
+                                </span>
+                                <span className="absolute left-0 bottom-0 w-full h-[2px] bg-primary animate-pulse" />
+                            </span>
+                        );
+                    }
+
+                    return (
+                        <span key={charIdx} className="text-base-content/40">
                             {char === ' ' ? '\u00A0' : char}
                         </span>
-                        <span className="absolute left-0 bottom-0 w-full h-[2px] bg-primary animate-pulse" />
-                    </span>
-                )
-            }
-
-            return (
-                <span key={idx} className="text-base-content/40">
-                    {char === ' ' ? '\u00A0' : char}
-                </span>
-            )
-        })
-    }
+                    );
+                })}
+            </span>
+            );
+        });
+    };
 
     return (
         <div className="h-full w-full overflow-hidden flex flex-col bg-gradient-to-br from-base-200 via-base-100 to-base-200 relative">
@@ -322,6 +382,7 @@ export default function Game() {
                                 <div
                                     className="font-mono text-base leading-relaxed tracking-wide select-none"
                                     style={{
+                                        whiteSpace: 'pre-wrap',
                                         display: 'flex',
                                         flexWrap: 'wrap',
                                         wordWrap: 'break-word',

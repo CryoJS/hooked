@@ -3,7 +3,6 @@ import { GiFishingHook } from 'react-icons/gi'
 
 export default function Navbar() {
     const location = useLocation()
-
     const isActive = (path) => location.pathname === path
 
     return (
@@ -19,7 +18,7 @@ export default function Navbar() {
             </div>
 
             {/* Nav Links */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 hidden sm:flex">
+            <div className="absolute left-1/2 transform -translate-x-1/2 flex">
                 <div className="flex items-center gap-8 font-mono font-bold uppercase tracking-tight">
                     <Link to="/" className={`px-2 py-1 ${isActive('/') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary/80'} transition-colors`}>
                         Home
