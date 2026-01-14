@@ -7,9 +7,9 @@ import Game from './pages/Game'
 export default function App() {
     return (
         <Router>
-            <div className="h-screen flex flex-col overflow-hidden bg-base-100">
+            <div className="h-screen flex flex-col bg-base-100">
                 <Navbar />
-                <div className="flex-1 min-h-0 overflow-hidden">
+                <div className="flex-1 min-h-0">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
