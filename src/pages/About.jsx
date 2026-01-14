@@ -650,7 +650,7 @@ export default function About() {
                                 <div className="collapse-title font-semibold">References</div>
                                 <div className="prose max-w-none collapse-content text-sm hanging-indent">
                                     <p className="text-base text-base-content">Full research and specific source used for each point:{" "}
-                                        <a href="../../../public/full-research.pdf" download className="text-blue-600 hover:text-blue-800">
+                                        <a href="/full-research.pdf" download className="text-blue-600 hover:text-blue-800">
                                             Download PDF
                                         </a>
                                     </p>
