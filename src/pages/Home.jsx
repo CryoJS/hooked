@@ -98,7 +98,7 @@ export default function Home() {
                             </div>
 
                             <div className="grid md:grid-cols-3 gap-8">
-                                <div className="card bg-base-200 border border-base-300">
+                                <div className="card text-neutral bg-primary-content shadow">
                                     <div className="card-body">
                                         <h3 className="card-title">🏠 Home</h3>
                                         <p className="text-sm">
@@ -107,7 +107,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="card bg-base-200 border border-base-300">
+                                <div className="card text-neutral bg-primary-content shadow">
                                     <div className="card-body">
                                         <h3 className="card-title">🎮 Play</h3>
                                         <p className="text-sm">
@@ -117,7 +117,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="card bg-base-200 border border-base-300">
+                                <div className="card text-neutral bg-primary-content shadow">
                                     <div className="card-body">
                                         <h3 className="card-title">📘 About</h3>
                                         <p className="text-sm">
